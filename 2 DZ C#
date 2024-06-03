@@ -1,0 +1,29 @@
+using System;
+
+namespace Cycles
+{
+    class Program
+    {
+        static void Main()
+        {
+            int steps = 5; // Количество ступенек
+            for (int i = 0; i < steps; i++)
+            {
+                // Выводим пробелы слева от ступеньки
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write("   ");
+                }
+                // Выводим символы ступеньки
+                Console.WriteLine("***");
+                // Выводим пробелы перед последней звездой
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write("   ");
+                }
+                // Выводим символ последней звезды
+                Console.WriteLine("   *");
+            }
+        }
+    }
+}
